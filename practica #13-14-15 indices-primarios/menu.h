@@ -10,12 +10,15 @@ INDEX : FIJO
 
 #include <fstream>
 #include <cstdlib>
+#include <string>
+
+#include <thread>  // std::thread
+#include <time.h>
 
 /// DEPENDECES
 #include "animal.h"
 #include "list.h"
 #include "list.cpp"
-
 
 /// FILES
 #define NAMEFILE_DATA       "data.txt"
@@ -52,15 +55,24 @@ INDEX : FIJO
 class Menu {
 
 private :
+    std::thread autosave;
+
     std::fstream* fileData;
     std::fstream* fileIndex;
+
     List<Animal> lista;
 
 public:
     Menu();
-    size_t start(size_t); /// TO START DOING SOMETHING
+    void start(size_t); /// TO START DOING SOMETHING
     void printMenu();
     void doAction(short);
+
+    Animal* capture();
+
+    void writeFileData(Animal*);
+
+
 
 };
 

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1475163299 source:/media/Here/semestre #5/ED2/practica #13-14-15 indices-primarios/animal.cpp
+	"animal.h"
+
+1475163071 /media/Here/semestre #5/ED2/practica #13-14-15 indices-primarios/animal.h
+	<string>
+

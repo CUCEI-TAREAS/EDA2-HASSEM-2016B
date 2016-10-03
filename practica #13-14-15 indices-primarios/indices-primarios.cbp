@@ -34,8 +34,13 @@
 		</Compiler>
 		<Unit filename="animal.cpp" />
 		<Unit filename="animal.h" />
+		<Unit filename="list.cpp" />
+		<Unit filename="list.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
 		<Unit filename="menu.h" />
+		<Unit filename="node.cpp" />
+		<Unit filename="node.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -5,3 +5,46 @@
 1475163071 /media/Here/semestre #5/ED2/practica #13-14-15 indices-primarios/animal.h
 	<string>
 
+1475471536 source:/media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/main.cpp
+	<iostream>
+	"menu.h"
+
+1475474594 source:/media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/animal.cpp
+	"animal.h"
+
+1475474558 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/animal.h
+	<string>
+
+1473868630 source:/media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/list.cpp
+	"list.h"
+
+1475471779 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/list.h
+	<fstream>
+	<iostream>
+	<string>
+	<stdlib.h>
+	"node.h"
+	"node.cpp"
+
+1473868040 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/node.h
+	<iostream>
+
+1473868075 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/node.cpp
+	"node.h"
+
+1473868075 source:/media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/node.cpp
+	"node.h"
+
+1475475015 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/menu.h
+	<fstream>
+	<cstdlib>
+	"animal.h"
+	"list.h"
+	"list.cpp"
+
+1475474903 source:/media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/menu.cpp
+	"menu.h"
+
+1473868630 /media/Here/semestre #5/ED2/EDA2-HASSEM-2016B/practica #13-14-15 indices-primarios/list.cpp
+	"list.h"
+

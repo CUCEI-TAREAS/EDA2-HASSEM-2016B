@@ -2,38 +2,38 @@
 
 using namespace std;
 
-animal::animal() {
-id = name = specie = date "";
+Animal::Animal() {
+    id = name = specie = date =  "";
 }
 
-string animal::getId() {
+string Animal::getId() {
     return id;
 }
 
-string animal::getName() {
+string Animal::getName() {
     return name;
 }
 
-string animal::getSpecie() {
+string Animal::getSpecie() {
     return  specie;
 }
 
-string animal::getDate() {
+string Animal::getDate() {
     return date;
 }
 
-void animal::setId(std::string i) {
+void Animal::setId(std::string i) {
     id = i;
 }
 
-void animal::setName(std::string n) {
+void Animal::setName(std::string n) {
     name =  n;
 }
 
-void animal::setSpcie(std::string x) {
+void Animal::setSpcie(std::string x) {
     specie = x;
 }
 
-void animal::setDate(std::string s) {
+void Animal::setDate(std::string s) {
     date = s;
 }

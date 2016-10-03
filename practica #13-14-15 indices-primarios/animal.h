@@ -3,7 +3,7 @@
 
 #include <string>
 
-class animal {
+class Animal {
 private :
     std::string id,
         name,
@@ -12,7 +12,7 @@ private :
 
 
 public :
-    animal();
+    Animal();
 
     std::string getId();
     std::string getName();

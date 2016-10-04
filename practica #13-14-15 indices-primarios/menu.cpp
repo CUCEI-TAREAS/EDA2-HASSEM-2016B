@@ -32,12 +32,16 @@ void Menu::printMenu() {
 
 }
 void Menu::doAction(short option) {
+    Animal* ani = nullptr;
+
     switch (option){
 
     case CHARACTER_ADD :
         system(CLEAR);
 
-        capture();
+        ani = capture();
+        /// write to data file
+        /// then write list
 
         break;
     case CHARACTER_PRINT_DATA :

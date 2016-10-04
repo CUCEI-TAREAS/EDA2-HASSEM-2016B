@@ -29,7 +29,7 @@ INDEX : FIJO
 #define TEMP_NAME_INDEX     "temp_index"
 
 /// TO DATA FILE
-#define SYMBOL_ANCHOR "|"
+#define CHARACTER_ANCHOR "|"
 
 /// AUTOSAVE
 #define TIME_AUTOSAVE_INDEX 15
@@ -72,7 +72,15 @@ public:
 
     void writeFileData(Animal*);
 
+    /// FILES
+    void openFileData();
+    void openFileIndex();
 
+    void closeFileData();
+    void closeFileIndex();
+
+    void writeAnimalData(Animal*);
+    void writeAnimalIndex(string);
 
 };
 

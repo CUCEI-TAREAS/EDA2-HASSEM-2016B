@@ -40,6 +40,9 @@ void Menu::doAction(short option) {
         system(CLEAR);
 
         ani = capture();
+        writeAnimalData(ani);
+        writeAnimalIndex(ani->getId());
+        closeFileData();
         /// write to data file
         /// then write list
 
@@ -78,5 +81,38 @@ Animal *Menu::capture(){
     animal->setDate(temp);
 
     return animal;
+}
+
+void Menu::openFileData(){
+    fileData = new fstream(NAMEFILE_DATA, ofstream::app);
+}
+
+void Menu::openFileIndex(){
+    fileIndex = new fstream(NAMEFILE_INDEX, ofstream::app);
+}
+
+void Menu::closeFileData(){
+    fileData->close();
+    fileData = nullptr;
+}
+
+void Menu::closeFileIndex(){
+    fileIndex->close();
+    fileIndex = nullptr;
+}
+
+void Menu::writeAnimalData(Animal * any){
+    openFileData();
+
+    int temp = any->getId().length();
+    fileData->write(any->getId().c_str(), temp);
+}
+
+void Menu::writeAnimalIndex(string id){
+    openFileIndex();
+    int temp =  id.length();
+    fileIndex->write(id.c_str(), temp);
+    fileIndex->write(CHARACTER_ANCHOR, 1);
+    /// file position
 }
 

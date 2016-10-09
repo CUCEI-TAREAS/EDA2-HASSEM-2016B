@@ -42,8 +42,7 @@ void Menu::doAction(short option) {
         ani = capture();
         writeAnimalData(ani);
         writeAnimalIndex(ani->getId());
-        closeFileData();
-        closeFileIndex();
+
         /// write to data file
         /// then write list
 
@@ -107,7 +106,7 @@ void Menu::writeAnimalData(Animal * any){
 
     int temp = any->getId().length();
     fileData->write(any->getId().c_str(), temp);
-
+    closeFileData();
 
 }
 
@@ -118,6 +117,7 @@ void Menu::writeAnimalIndex(string id){
 
     fileIndex->write(id.c_str(), temp);
     fileIndex->write(CHARACTER_ANCHOR, 1);
+    closeFileIndex();
     /// file position
 }
 
